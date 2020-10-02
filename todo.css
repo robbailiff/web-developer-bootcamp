@@ -1,0 +1,33 @@
+/* Element selector - selects the body element and applies the style */
+body {
+    background-color: deepskyblue;
+}
+
+/* ID selector - # symbol corresponds to a specific matching id attribute and applies the style to only that element */
+#todolist {
+    color: yellow;
+}
+/* Class selector - . symbol corresponds to the matching class attribute and applies styling to all members of the class */
+.completed {
+    text-decoration: line-through;
+}
+
+/* Descendant selector - selects only a certain tag inside of another tag to apply the style to (i.e. <li> inside of <ul> )*/
+ul li {
+    color: tomato;
+}
+
+/* Adjacent selector - selects tag that comes immediately after another tag to apply styling (i.e. <footer> immediately after a <ul>)*/
+ul + footer {
+    border: 1px dashed green;
+}
+
+/* Attribute selector only selects a specific attribute of a tag (i.e a link to google inside of <a>) */
+a[href="http://www.google.com"] {
+    background-color:  pink;
+}
+
+/* Nth of type selector - selects the nth of the specified tag type (i.e. 2nd <li>) */
+li:nth-of-type(2) {
+    background: rgb(235, 250, 23);
+}
