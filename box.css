@@ -1,0 +1,23 @@
+p {
+    /* Height */
+    height: 50px;
+
+    /* Width is full width of the screen by default */
+    width: 25%;
+
+    /* Border */
+    border: 2px solid blue;
+
+    /* Padding creates space between the content and the border*/
+    padding: 20px;
+
+    /* Margin creates space between elements (i.e. outside the box)*/
+    margin: 20px 40px 50px 70px;
+}
+
+h1 {
+    width: 50%;
+
+    /* This syntax automatically centers the margin reletive to the width */
+    margin: 0 auto;
+}
