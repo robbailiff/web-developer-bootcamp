@@ -1,12 +1,15 @@
+/* The display property specifies how an element is displayed */
+/* We can change span tag (an inline element) to a block by changing the display property */
 span {
     background-color: palevioletred;
     border: 1px solid black;
     width: 500px;
     padding: 50px;
     margin: 50px;
+    display: block; 
 }
 
-
+/* A block-level element always starts on a new line and takes up the full width available */
 h1 {
     background-color: paleturquoise;
     border: 1px solid black;
@@ -15,7 +18,8 @@ h1 {
     margin: 100px;
 }
 
-
+/* An inline element does not start on a new line and only takes up as much width as necessary */
+/* Height and width have no effect but border properties do on the same line as an inline element */
 div {
     height: 200px;
     width: 200px;

@@ -1,0 +1,53 @@
+/* The position CSS property sets how an element is positioned in a document. 
+The top, right, bottom, and left properties determine the final location of positioned elements. */
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #3d405b;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+
+#middle {
+    background-color: #81b29a;
+}
+
+/* Default position. The top, right, bottom, left, and z-index properties have no effect */
+#static #middle {
+    position: static;
+    top: 100px;
+}
+
+/* Default position but can be changed using the top, right, bottom, and left properties */
+/* The offset does not affect the position of any other elements */
+#relative #middle {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+/* If we give the parent absolute element a position, then the #absolute #middle element is positioned relative to it instead of <body>*/
+#absolute {
+    position: relative;
+}
+
+/* It is removed from the normal document flow, and no space is created for the element in the page layout */
+/* It is positioned relative to its closest positioned ancestor if it has any  */
+/* If it has none, it is placed relative to the initial containing block */
+/* Here it is placed relative to the the <body> and placed at the top of the page */
+#absolute #middle {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+/* Similar to absolute but it is always positioned relative to the containing block */
+/* When you scroll down a page it stays fixed to the top of the screen */
+#fixed #middle {
+    position: fixed;
+    top: 0;
+    left: 400px;
+}

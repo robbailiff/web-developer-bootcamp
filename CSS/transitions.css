@@ -1,0 +1,51 @@
+/* Using the transition property we can transition from one CSS style to another */
+/* We can specify 4 properties: property name | duration | timing function | delay */
+
+/* In this example we change the colour and border shape when we hover over the element */
+/* For the first property we add property name, duration & timing function arguments */
+/* For the second property we add property name, duration & delay */
+.circle {
+    width: 300px;
+    height: 300px;
+    background-color: magenta;
+    transition: background-color 1s ease-in, border-radius 2s 0.5s;
+}
+
+.circle:hover {
+    background-color: cyan;
+    border-radius: 50%;
+}
+
+/* Here we move all section divs left 500px when we hover over them */
+ section div {
+    height: 100px;
+    width: 100px;
+    background-color: turquoise;
+    margin: 20px 0;
+    transition: margin-left 3s;
+} 
+
+section:hover div {
+    margin-left:500px;
+}
+
+/* Examples of timing functions */
+
+/* Starts off transitioning slowly with speed increasing until complete */
+div:nth-of-type(1){
+    transition-timing-function: ease-in;
+}
+/* Starts transitioning quickly and then slows down as the transition continues */
+div:nth-of-type(2){
+    transition-timing-function: ease-out;
+}
+
+/* Below are 2 example of custom timing functions using the cubic-Bezier curve*/
+div:nth-of-type(3){
+    transition-timing-function: cubic-bezier(0.7, 0, 0.84, 0);
+}
+div:nth-of-type(4){
+    transition-timing-function: cubic-bezier(0.85, 0, 0.15, 1);
+} 
+
+

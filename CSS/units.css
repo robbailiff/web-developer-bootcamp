@@ -13,6 +13,8 @@ html {
     height: 20%;
 }
 
+/* Ems inherit from the parent element but this can cause issues with nested tags*/
+/* When ested elements using ems, each successive level of nesting gets progressively larger or smaller relative to the parent */
 
 #ems h2 {
     font-size: 2em;
@@ -41,6 +43,8 @@ button {
     color: white;
 }
 
+/* Rems inherit from the root element i.e. <html> at the top of the document */
+/* This keeps things more consistent and easier to change but they are less flexible than Ems */
 
 #rems h2{
     font-size: 3rem;
