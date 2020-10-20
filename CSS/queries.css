@@ -6,6 +6,12 @@ h1 {
     font-size: 6em;
     text-align: center;
 }
+
+h2 {
+    font-size: 4em;
+    text-align: center;
+}
+
 nav {
     font-size: 1.5em;
 }
@@ -16,5 +22,20 @@ ul,li {
     padding: 0;
 }
 
+/* max width changes when the browser window is less than the specified width */
+/* min width changes when the browser window is more than the specified width */
 
+/* The code below is purple when the browser width is 600 - 800px wide */
+@media (min-width: 600px) and (max-width: 800px){
+    h1 {
+        color: purple;
+    }
+}
 
+/* Orientation changes styling when the viewport orientation changes to the keyword value */
+
+@media (orientation: landscape){
+    h1 {
+        background-color: cornflowerblue;
+    }
+}
