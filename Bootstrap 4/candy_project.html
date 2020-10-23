@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="candy.css">
+
+    <title>Museum of Candy</title>
+  </head>
+  
+  <body>
+    <!-- Set up the navbar -->
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+      <a href="" class="navbar-brand">CANDY</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navlinks" aria-label="Toggle navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navlinks">
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">TICKETS</a>
+          </li>    
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Create the header section -->
+    <!-- Container-fluid causes it to take up the full width, px-0 removes the L and R padding -->
+    <section class="container-fluid px-0">
+      <!-- Align the content vertically to the center-->
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <!-- Make the text white, centered and to be hidden (display=none) until the viewport width is large-->
+          <!-- mt-5 increases the size of the top margin -->
+         <div id="headingGroup" class="text-white text-center d-none d-lg-block mt-5">
+           <!-- Add the spans in to allow styling of the forward slashes -->
+          <h1 class="display-2">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+          <h1 class="display-2">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+          <h1 class="display-2">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+          <h1 class="display-2">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+          <h1 class="display-2">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+          <h1 class="display-2">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+          <h1 class="display-2">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+         </div>
+        </div>
+        <div class="col-lg-6">
+          <!-- Img-fluid make the image responsive -->
+          <img class="img-fluid" src="imgs/hand2.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Create the information section -->
+    <section class="container-fluid px-0">
+      <!-- First row -->
+      <div class="row align-items-center content">
+        <!-- Change the order columns are displayed in when the breakpoint is reached -->
+        <!-- Here the image column is displayed second until the medium viewport width, then it is displayed first -->
+        <div class="col-md-6 order-2 order-md-1">
+          <img class="img-fluid" src="imgs/milk.png" alt="">
+        </div>
+        <!-- Start of text column -->
+        <div class="col-md-6 text-center order-1 order-md-2">
+          <!-- Nest a row inside the right-hand column and center the content horizontally -->
+          <div class="row justify-content-center">
+            <!-- Create another column within with a width of 10 of 12 units to create spacing within the grid or 8 when large-->
+            <!-- Add a margin bottom of 5 until the medium viewport width, then stop -->
+            <div class="col-10 col-lg-8 infoText mb-5 mb-md-0">
+              <h2>MUSEUM OF CANDY</h2>
+              <!-- Icon is hidden (display=none) until the viewport width is large -->
+              <img class="d-none d-lg-inline" src="imgs/lolli_icon.png" alt="">
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iste fugit, vel ipsum sed ducimus odio asperiores in dolorum esse voluptatem illo sequi 
+                voluptates maiores corrupti, tempore magni quaerat nemo!Ab ad quis odio numquam autem architecto delectus tempore, vero minima quas. 
+                Fugiat incidunt temporibus officia libero! Fuga quas perferendis dignissimos voluptatibus architecto, labore deserunt libero in! Fuga, odit tenetur?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+      <!-- Second row -->
+      <div class="row align-items-center content">   
+        <!-- Text column -->
+        <div class="col-md-6 text-center">
+          <!-- Nest a row inside the right-hand column and center the content horizontally -->
+          <div class="row justify-content-center">
+            <!-- Create another column within with a width of 10 of 12 units to create spacing within the grid or 8 when large-->
+            <!-- Add a margin bottom of 5 until the medium viewport width, then stop -->
+            <div class="col-10 col-lg-8 infoText mb-5 mb-md-0">
+              <h2>MUSEUM OF CANDY</h2>
+              <!-- Icon is hidden (display=none) until the viewport width is large -->
+              <img class="d-none d-lg-inline" src="imgs/lolli_icon.png" alt="">
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt quia eaque praesentium eveniet? 
+                Odit ad, eaque maiores sit totam dolores, dolorem, quam officia ab dignissimos explicabo iste voluptas magni.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor itaque possimus a quia repellendus laborum adipisci corporis natus iste eius id rem in nulla, sapiente voluptatem quasi, rerum illo unde!
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Image column -->
+        <div class="col-md-6 ">
+          <img class="img-fluid" src="imgs/gumball.png" alt="">
+        </div>
+      </div>
+
+      <!-- Third row -->
+      <div class="row align-items-center content">
+        <!-- Change the order columns are displayed in when the breakpoint is reached -->
+        <!-- Here the image column is displayed second until the medium viewport width, then it is displayed first -->
+        <div class="col-md-6 order-2 order-md-1">
+          <img class="img-fluid" src="imgs/sprinkles.png" alt="">
+        </div>
+        <!-- Start of text column -->
+        <div class="col-md-6 text-center order-1 order-md-2">
+          <!-- Nest a row inside the right-hand column and center the content horizontally -->
+          <div class="row justify-content-center">
+            <!-- Create another column within with a width of 10 of 12 units to create spacing within the grid or 8 when large-->
+            <!-- Add a margin bottom of 5 until the medium viewport width, then stop -->
+            <div class="col-10 col-lg-8 infoText mb-5 mb-md-0">
+              <h2>MUSEUM OF CANDY</h2>
+              <!-- Icon is hidden (display=none) until the viewport width is large -->
+              <img class="d-none d-lg-inline" src="imgs/lolli_icon.png" alt="">
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt quia eaque praesentium eveniet? 
+                Odit ad, eaque maiores sit totam dolores, dolorem, quam officia ab dignissimos explicabo iste voluptas magni.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem voluptate reprehenderit asperiores possimus illum quia iure quis, ipsa perferendis a amet suscipit nemo id iusto perspiciatis officiis. Fugit, assumenda aspernatur!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <!-- Creates a JS script toggles the scrolled class when you scroll down the page past the thickness of the navbar -->
+    <script>
+      $(function () {
+        $(document).scroll(function(){
+          var $nav = $("#mainNavbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        })
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Basics</title>
+    <!-- Need to add the Bootstrap CDN in the head tag to include Bootstrap in the document-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!-- Add custom style sheet after the Bootstrap CDN to have it override parts of the Bootstrap style-->
+        <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <!-- Containers are the most basic layout element in Bootstrap and are required when using the default grid system -->
+    <!-- They create a responsive container or box for the rest of the content inside them-->
+    <div class="container">
+        <!-- Display headings are similar to normal HTML headings but they are larger and designed to stand out more -->
+        <!-- They are styled with the display-1 to display-4 classes, the number controls the font size -->
+        <!-- The text-center class just aligns the text to the centre of the page -->
+        <!-- The text-primary class changes the colour to the 'primary' colour (default is blue)-->
+        <h1 class="display-1 text-center text-primary">Bootstrap Playground</h1>
+        <!-- Badges are essentially a span with the badge class and a colour used as a small count and labeling component -->
+        <!-- Badge-pill class simily gives the badge rounded corners -->
+        <h2 class="display-4">Buttons <span class="badge badge-success badge-pill">New</span></h2>
+        <!-- Bootstrap includes several predefined button styles, each serving its own semantic purpose -->
+        <!-- The .btn classes define the style and are designed to be used with the <button> element -->
+        <!-- The second part of the class (e.g. btn-primary) defines the semantic meaning and default colour -->
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <!-- Create buttons with outlines instead of solid colour -->
+        <button class="btn btn-outline-warning">Warning Outline</button>
+        <button class="btn btn-outline-danger">Danger Outline</button>
+        <!-- Add btn-sm or btn-lg to make a smaller or larger button than the default-->
+        <button class="btn btn-outline-info btn-lg">Info Outline</button>
+        <button class="btn btn-secondary btn-sm">SM Button</button>
+        <!-- Add the disabled attribute to disable the button -->
+        <button type="button" class="btn btn-success" disabled>Success Disabled</button>
+        <button class="btn btn-primary">Updates <span class="badge badge-light">9</span></button>
+
+        <h3>Button Groups</h3>
+        <!-- Group a series of buttons together on a single line with the button group -->
+        <div class="btn-group">
+            <button class="btn btn-warning">One</button>
+            <button class="btn btn-warning">Two</button>
+            <button class="btn btn-warning">Three</button>
+        </div>
+
+        <h3>Alerts</h3>
+        <!-- Alert messages provide feedback for typical user actions (e.g. Welcome message or error message)-->
+        <!-- The alert and alert-danger classes add the style and colour respectively -->
+        <!-- The alert-dismissible class adds a cross to dismiss the alert -->
+        <!-- Fade and show classes style a hover effect over the cross -->
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <!-- The alert-heading class adds a header to the top of the alert message -->
+            <h4 class="alert-heading">Oh No!</h4>
+            Danger! You are about to end the world as we know it!
+            <!-- Adds the button to allow the alert to be dismissed (JS scripts required for this to work)-->
+            <button aria-label="Close" class="close" data-dismiss="alert">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <h2 class="display-4">Typography</h2>
+        <!-- The lead class increases weight and size of font to make it stand out more -->
+        <!-- Designed to be used for a tagline or to highlight a particular text passage -->
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eaque, in autem cupiditate quasi
+            neque hic
+            minus
+            harum perferendis repellendus eos suscipit? Sunt laborum deserunt ea autem totam illum modi!Nobis expedita,
+            inventore provident reiciendis nostrum impedit, sunt magnam, labore ipsum sequi incidunt! Corrupti esse
+            harum
+            nesciunt soluta placeat, voluptates illo accusantium quam fuga ducimus quaerat minus laudantium, quo odit!
+        </p>
+        <!-- Blockquote class adds more font size and weight to the regular HTML blockquote -->
+        <!-- The bg-light class adds the background colour of the 'light' built-in style (grey) -->
+        <!-- The text-right class just aligns the text to the right -->
+        <blockquote class="blockquote bg-light text-right">
+            <!-- Mb-0 removes the bottom margin, leaving no gap between paragraph and the quote author -->
+            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab sed iusto alias numquam
+                ipsum tenetur
+                error nostrum similique sunt, quod deserunt totam pariatur consequatur ad exercitationem et ea odio?</p>
+            <!-- Blockquote-footer class automatically styles a quote author with a long dash and greyed text-->
+            <footer class="blockquote-footer">Mr. Lorem Ipsum</footer>
+        </blockquote>
+
+    </div>
+
+    <!-- Many Bootstrap components require the use of JavaScript to function.
+        Include the scripts near the end of the pages before the closing <body> tag to enable them-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
