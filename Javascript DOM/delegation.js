@@ -27,7 +27,7 @@ const addTweet = (username, tweet) => {
 // 2. Attach the event listener to the parent element
 // 3. Use event.target to select the target element
 
-// Here you need to specificalyy click on an <li> element (newTweet) in order for it to be removed
+// Here you need to specifically click on an <li> element (newTweet) in order for it to be removed
 // If you clicked on any other element in the container, it would not remove it
 // However, if you didn't have e.target.nodeName === 'LI' in the code, it would remove any element clicked within the tweetsContainer
 
