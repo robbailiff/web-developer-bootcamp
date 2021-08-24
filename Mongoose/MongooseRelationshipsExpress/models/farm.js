@@ -22,6 +22,7 @@ const farmSchema = new Schema({
     ]
 });
 
+
 // DELETE ALL ASSOCIATED PRODUCTS AFTER A FARM IS DELETED
 farmSchema.post('findOneAndDelete', async function (farm) {
     if (farm.products.length) {
@@ -30,8 +31,8 @@ farmSchema.post('findOneAndDelete', async function (farm) {
     }
 })
 
-const Farm = mongoose.model('Farm', farmSchema);
 
+const Farm = mongoose.model('Farm', farmSchema);
 
 
 module.exports = Farm;
